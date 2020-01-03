@@ -1,6 +1,6 @@
 ---
 - name: Install Python
-  hosts: pihole
+  hosts: ubuntuvagrant 
   become: True
   gather_facts: False
   tasks:

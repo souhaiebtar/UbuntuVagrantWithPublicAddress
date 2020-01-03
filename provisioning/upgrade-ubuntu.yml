@@ -1,6 +1,6 @@
 ---
 - name: Upgrade installed Ubuntu packages
-  hosts: pihole
+  hosts: ubuntuvagrant
   become: True
   tasks:
 
