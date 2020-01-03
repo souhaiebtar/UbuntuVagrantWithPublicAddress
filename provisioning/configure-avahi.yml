@@ -1,0 +1,16 @@
+---
+- name: Install, configure and start avahi
+  hosts: pihole
+  become: True
+  gather_facts: False
+  tasks:
+
+    - name: Install avahi-daemon
+      apt:
+        name: avahi-daemon
+        update_cache: yes
+
+    - name: Start avahi-daemon
+      service:
+        name: avahi-daemon
+        state: started
